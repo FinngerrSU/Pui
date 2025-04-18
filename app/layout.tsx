@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import {Oswald,Pixelify_Sans } from "next/font/google";
 import "./globals.css";
-
+import ClientProviders from "./suiprovider";
 const OswaldSans = Oswald({
   variable: "--font-Oswald",
   subsets: ["latin"],
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${OswaldSans.variable} ${Pixel.variable} antialiased`}
       >
-        {children}
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );
