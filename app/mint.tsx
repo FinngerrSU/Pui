@@ -3,6 +3,7 @@ import { useCurrentAccount, useCurrentWallet, useSuiClientQuery } from "@mysten/
 
 import { useSignAndExecuteTransaction } from "@mysten/dapp-kit";
 import { Transaction } from "@mysten/sui/transactions";
+import { QueryObserverResult } from "@tanstack/react-query";
 
 
 interface MyObject{
@@ -11,7 +12,7 @@ interface MyObject{
   minted_addresses: string[];
 }
 interface MintProps {
-  refetchSupply: () => Promise<MyObject>; // Type for the refetch function
+  refetchSupply: () => Promise<QueryObserverResult>; // Type for the refetch function
 }
 
 export function GetSupply(){
