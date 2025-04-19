@@ -70,7 +70,7 @@ export default function Page() {
             </div>
           <p className="text-lg sm:text-xl text-yellow-100">
           If a key can open many locks, people would say that key is awesome. If a lock can be opened by many keys, then that lock has a big problem.
-            <span className="text-green-300 font-bold"> 10,000 coin/address.</span>
+            <span className="text-green-300 font-bold"> 100,000 coin/address.</span>
           </p>
           <Mint refetchSupply={refetch}/>
 
