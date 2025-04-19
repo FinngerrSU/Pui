@@ -15,7 +15,7 @@ function formatNumberWithCommas(value: string | number): string {
 }
 
 export default function Page() {
-  const { totalMinted, isPending, isError, error, refetch } = GetSupply();
+  const { totalMinted, refetch } = GetSupply();
   return (
     <main className="font-mono min-h-dvh
      bg-gradient-to-br from-purple-900 via-pink-600 to-yellow-400 text-white p-4">

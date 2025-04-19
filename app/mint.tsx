@@ -11,7 +11,7 @@ interface MyObject{
   minted_addresses: string[];
 }
 interface MintProps {
-  refetchSupply: () => Promise<any>; // Type for the refetch function
+  refetchSupply: () => Promise<MyObject>; // Type for the refetch function
 }
 
 export function GetSupply(){
