@@ -100,7 +100,7 @@ export default function Page() {
           Let me tell you something...
         </div>
         <div className="flow-root my-4">
-          There're 4 billion pussies in this world
+          There are 4 billion pussies in this world
         </div>
         <div className="">
           
